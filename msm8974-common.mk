@@ -115,6 +115,7 @@ PRODUCT_PACKAGES += \
     chargeonlymode
 
 # System Dex
+PRODUCT_ART_TARGET_INCLUDE_DEBUG_BUILD := false
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI
 

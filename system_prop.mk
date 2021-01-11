@@ -23,6 +23,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.data.large_tcp_window_size=true \
     persist.cne.feature=0 \
     persist.data.qmi.adb_logmask=0 \
+	persist.sys.timezone=Asia/Shanghai \
     vidc.debug.level=1 \
     qcom.bt.dev_power_class=1 \
     bluetooth.hfp.client=1 \
@@ -127,3 +128,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_backpressure=1
+

@@ -7,3 +7,5 @@
 
 #============= cmhw ==============
 /sys/vibrator/pwmvalue                                       u:object_r:vibeamp_sysfs:s0
+
+/system/bin/powerctl                                         u:object_r:powerctl_exec:s0

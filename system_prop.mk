@@ -129,3 +129,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.latch_unsignaled=1 \
     debug.sf.disable_backpressure=1
 
+# MiPush System
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.miui.ui.version.name=V12 \
+    ro.miui.ui.version.code=10 \
+	ro.miui.ui.version.code_time=1603036800
+

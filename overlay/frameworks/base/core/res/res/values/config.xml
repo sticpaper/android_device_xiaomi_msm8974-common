@@ -244,4 +244,13 @@
 
     <!-- Enable rounded corners on Windows -->
     <bool name="config_supportsRoundedCornersOnWindows">true</bool>
+    
+    <!-- Panel rounds -->
+    <dimen name="rounded_corner_radius">2dp</dimen>
+
+    <!-- dialog rounds -->
+    <dimen name="dialog_corner_radius">6dp</dimen>
+
+    <!-- subtitle rounds -->
+    <dimen name="subtitle_corner_radius">6dp</dimen>
 </resources>

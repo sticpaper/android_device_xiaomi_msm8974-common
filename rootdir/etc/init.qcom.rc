@@ -36,14 +36,6 @@ on early-init
 on init
     export EXTERNAL_STORAGE /sdcard
 
-    # Double Tap Wake Paths
-    chown system system /sys/android_touch/doubletap2wake
-    chown system system /sys/android_touch/sweep2sleep
-	chown system system /sys/android_touch/sweep2wake
-	chmod 0664 /sys/android_touch/doubletap2wake
-    chmod 0664 /sys/android_touch/sweep2sleep
-    chmod 0664 /sys/android_touch/sweep2wake
-
     # Support legacy paths
     symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0

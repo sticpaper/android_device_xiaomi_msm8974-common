@@ -40,9 +40,6 @@ TARGET_CPU_SMP      := true
 TARGET_CPU_VARIANT  := generic
 TARGET_CPU_VARIANT_RUNTIME := krait
 
-# Double Tap Wake (Kernel)
-TARGET_TAP_TO_WAKE_NODE := "/sys/android_touch/doubletap2wake"
-
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
 

@@ -244,6 +244,10 @@
 
     <!-- Enable rounded corners on Windows -->
     <bool name="config_supportsRoundedCornersOnWindows">true</bool>
+
+    <!-- Android SQLite System -->
+    <string name="db_wal_sync_mode">OFF</string>
+    <string name="db_default_sync_mode">OFF</string>
     
     <!-- Panel rounds -->
     <dimen name="rounded_corner_radius">3dp</dimen>

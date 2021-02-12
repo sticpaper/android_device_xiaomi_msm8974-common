@@ -31,9 +31,9 @@ case "$powermode" in
         echo performance  > /sys/devices/system/cpu/cpu1/cpufreq/scaling_governor
         echo performance  > /sys/devices/system/cpu/cpu2/cpufreq/scaling_governor
         echo performance   > /sys/devices/system/cpu/cpu3/cpufreq/scaling_governor
-        echo 20            > /sys/module/cpu_boost/parameters/boost_ms
+        echo 60            > /sys/module/cpu_boost/parameters/boost_ms
         echo 1497600       > /sys/module/cpu_boost/parameters/input_boost_freq
-        echo 40            > /sys/module/cpu_boost/parameters/input_boost_ms
+        echo 120            > /sys/module/cpu_boost/parameters/input_boost_ms
         echo 1728000       > /sys/module/cpu_boost/parameters/sync_threshold
         echo 578000000     > /sys/class/kgsl/kgsl-3d0/max_gpuclk
         echo performance   > /sys/class/kgsl/kgsl-3d0/devfreq/governor
@@ -73,7 +73,7 @@ case "$powermode" in
         echo "19000 1400000:39000 1700000:19000" > /sys/devices/system/cpu/cpufreq/interactive/above_hispeed_delay
         echo 99                                  > /sys/devices/system/cpu/cpufreq/interactive/go_hispeed_load
         echo 1497600                             > /sys/devices/system/cpu/cpufreq/interactive/hispeed_freq
-        echo 40000                               > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
+        echo 42000                               > /sys/devices/system/cpu/cpufreq/interactive/min_sample_time
         echo 20                                  > /sys/module/cpu_boost/parameters/boost_ms
         echo 1728000                             > /sys/module/cpu_boost/parameters/sync_threshold
         echo 1497600                             > /sys/module/cpu_boost/parameters/input_boost_freq
@@ -122,7 +122,7 @@ case "$powermode" in
         echo 0             > /sys/module/cpu_boost/parameters/boost_ms
         echo 960000        > /sys/module/cpu_boost/parameters/sync_threshold
         echo 960000        > /sys/module/cpu_boost/parameters/input_boost_freq
-        echo 40            > /sys/module/cpu_boost/parameters/input_boost_ms
+        echo 20            > /sys/module/cpu_boost/parameters/input_boost_ms
         echo 330000000     > /sys/class/kgsl/kgsl-3d0/max_gpuclk
         echo msm-adreno-tz > /sys/class/kgsl/kgsl-3d0/devfreq/governor
         echo "cpubw_hwmon" > $dev_governor
